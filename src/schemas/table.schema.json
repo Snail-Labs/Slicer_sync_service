@@ -1,0 +1,36 @@
+{
+    "type": "object",
+    "properties": {
+      "users": {
+        "type": "array",
+        "items": {
+          "$ref": "./user.schema.json"
+        }
+      },
+      "models": {
+        "type": "array",
+        "items": {
+          "$ref": "./model.schema.json"
+        }
+      },
+      "printer": {
+        "$ref": "./print_config.schema.json"        
+      },
+      "selected_models": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "user_id": {
+            "type": "integer"
+          },
+          "model_id": {
+            "type": "integer"
+          }
+        },
+        "required": ["userId", "modelId"]
+      }
+    }
+    },
+    "required": ["users", "models", "printer"]
+}

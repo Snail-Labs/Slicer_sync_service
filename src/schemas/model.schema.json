@@ -1,0 +1,22 @@
+{
+    "type": "object",
+    "properties": {
+      "x": { "type": "number" },
+      "y": { "type": "number" },
+      "z": { "type": "number" },
+      "x_scale": { "type": "number" },
+      "y_scale": { "type": "number" },
+      "z_scale": { "type": "number" },
+      "x_angle": { "type": "number" },
+      "y_angle": { "type": "number" },
+      "z_angle": { "type": "number" },
+      "id": { "type": "integer" },
+      "file": { "type": "string" }
+    },
+    "required": [
+        "x", "y", "z", 
+        "x_scale", "y_scale", "z_scale",
+        "x_angle", "y_angle", "z_angle", 
+        "id", "file"
+    ]
+}

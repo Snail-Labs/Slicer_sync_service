@@ -1,0 +1,15 @@
+{
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "integer"
+      },
+      "name": {
+        "type": "string"
+      },
+      "print_config": {
+          "$ref": "./print_config.schema.json"
+      }
+    },
+    "required": ["id", "name", "print_config"]
+}
