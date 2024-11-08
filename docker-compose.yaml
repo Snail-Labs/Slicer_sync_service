@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: sync_service/Dockerfile
+    ports:
+      - "80:80"
+    volumes:
+      - .:/app
+    environment:
+      - ENV=production
