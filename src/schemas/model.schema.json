@@ -11,7 +11,8 @@
       "y_angle": { "type": "number" },
       "z_angle": { "type": "number" },
       "id": { "type": "integer" },
-      "file": { "type": "string" }
+      "file": { "type": "string" },
+      "support": { "$ref": "./support.schema.json" }
     },
     "required": [
         "x", "y", "z", 
