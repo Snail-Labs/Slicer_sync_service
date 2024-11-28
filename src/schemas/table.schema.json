@@ -17,20 +17,16 @@
         "$ref": "./print_config.schema.json"        
       },
       "selected_models": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "user_id": {
-            "type": "integer"
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "user_id": {"type": "integer"},
+            "model_id": {"type": "integer"}
           },
-          "model_id": {
-            "type": "integer"
-          }
-        },
-        "required": ["userId", "modelId"]
+          "required": ["user_id", "model_id"]
+        }
       }
-    }
     },
-    "required": ["users", "models", "printer"]
+    "required": ["users", "models"]
 }

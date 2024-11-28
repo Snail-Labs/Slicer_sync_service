@@ -8,5 +8,6 @@
                 "2"
             ]
         }
-    }
+    },
+    "required": ["support_type"]
 }

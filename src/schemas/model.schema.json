@@ -1,6 +1,8 @@
 {
     "type": "object",
     "properties": {
+      "id": { "type": "integer" },
+      "file": { "type": "string" },
       "x": { "type": "number" },
       "y": { "type": "number" },
       "z": { "type": "number" },
@@ -10,14 +12,12 @@
       "x_angle": { "type": "number" },
       "y_angle": { "type": "number" },
       "z_angle": { "type": "number" },
-      "id": { "type": "integer" },
-      "file": { "type": "string" },
       "support": { "$ref": "./support.schema.json" }
     },
     "required": [
-        "x", "y", "z", 
-        "x_scale", "y_scale", "z_scale",
-        "x_angle", "y_angle", "z_angle", 
-        "id", "file"
+      "id", "file",
+      "x", "y", "z", 
+      "x_scale", "y_scale", "z_scale",
+      "x_angle", "y_angle", "z_angle"
     ]
 }
